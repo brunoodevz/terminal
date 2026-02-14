@@ -1,0 +1,35 @@
+body {
+  background: #0d0d0d;
+  font-family: monospace;
+  color: #00ff88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.terminal {
+  background: #000;
+  width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#output {
+  min-height: 300px;
+  margin-bottom: 10px;
+}
+
+.input-line {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #00ff88;
+  font-family: monospace;
+  width: 100%;
+}
