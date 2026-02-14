@@ -16,8 +16,47 @@ body {
 }
 
 #output {
-  min-height: 300px;
+  height: 300px;          /* altura fixa do terminal */
+  overflow-y: auto;       /* ativa scroll */
   margin-bottom: 10px;
+  white-space: pre-wrap;  /* mantém quebras de linha */
+  word-wrap: break-word;
+}
+
+#output {
+  min-height: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+
+  white-space: pre-wrap;
+}
+
+#output::-webkit-scrollbar {
+  width: 8px;
+}
+
+#output::-webkit-scrollbar-track {
+  background: #111;
+}
+
+#output::-webkit-scrollbar-thumb {
+  background: #00ff88;
+  border-radius: 6px;
+}
+
+#output::-webkit-scrollbar-thumb:hover {
+  background: #00ffaa;
+}
+
+#output {
+  scrollbar-width: thin;
+  scrollbar-color: #00ff88 #111;
+}
+
+#output::-webkit-scrollbar-thumb {
+  background: #00ff88;
+  border-radius: 6px;
+  box-shadow: 0 0 6px #00ff88;
 }
 
 .input-line {
